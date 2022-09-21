@@ -1,0 +1,103 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Buttoms {
+    position: absolute;
+    display: inline-block;
+    margin-right: 5px;
+    right: 50%;
+}
+
+.btn1, .btn2, .btn3 {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.btn1:hover,
+.btn1 :focus, .btn2:hover, .btn2:focus, .btn3:hover, .btn3:focus {
+    background-color: #07c;
+}
+
+.btn1:focus, .btn2:focus, .btn3:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn1:active, .btn2:active, .btn3:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+.centered {
+    position: absolute;
+    text-align: center;
+    color: black;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 281px;
+}
+
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
