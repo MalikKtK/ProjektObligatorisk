@@ -20,4 +20,9 @@ public class HomeController {
     public String FoodWasteGame() {
         return "game/foodwastegame";
     }
+
+    @GetMapping("/read/foodrecipies")
+    public String FoodRecipies() {
+        return "read/foodrecipies";
+    }
 }
