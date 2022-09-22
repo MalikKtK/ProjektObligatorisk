@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <ul class="topnav">
-            <li><a href="../">Home</a></li>
-            <li><a href="../read/foodwaste">Food Waste</a></li>
-            <li><a class="active" href="../read/foodrecipies">Food Recipies</a></li>
-            <li><a href="../game/foodwastegame">Food Waste Game</a></li>
-        </ul>
-<div class="centered">
-    <tr th:each="recipe: ${recipe}">
-        <td th:text="${recipe.getFoodType()}"/>
-        <td th:text="${recipe.getTextBody()}"/>
-    </tr>
-    <div class="search-container">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="search-button"></i></button>
-        </form>
-</div>
-</div>
+<div class="container">
+    <ul class="topnav">
+        <li><a href="../">Home</a></li>
+        <li><a href="../read/foodwaste">Food Waste</a></li>
+        <li><a class="active" href="../read/foodrecipies">Food Recipies</a></li>
+        <li><a href="../game/foodwastegame">Food Waste Game</a></li>
+    </ul>
+    <div class="centered">
+        <tr th:each="recipe: ${recipe}">
+            <td th:text="${recipe.getFoodType()}"/>
+            <td th:text="${recipe.getTextBody()}"/>
+        </tr>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="search-button"></i></button>
+            </form>
+        </div>
+    </div>
     <div style="padding-left:100px">
         <h2>Responsive Search Bar</h2>
         <p>Navigation bar with a search box inside of it.</p>
         <p>Resize the browser window to see the responsive effect.</p>
         <p>For more examples on how to add a submit button and icon inside the search bar, go back to the tutorial.</p>
     </div>
-    </div>
+</div>
 </body>
 </html>

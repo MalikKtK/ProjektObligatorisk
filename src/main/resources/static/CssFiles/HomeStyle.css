@@ -13,24 +13,6 @@ body {
     color: white;
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    color: blue;
-}
 .centered {
     position: absolute;
     text-align: center;
@@ -70,8 +52,4 @@ ul.topnav li a.active {background-color: #04AA6D
 
 @media screen and (max-width: 600px) {
     ul.topnav li.right
-}
-
-.img1 {
-    background-image: none;
 }
