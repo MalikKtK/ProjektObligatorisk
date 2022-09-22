@@ -7,6 +7,16 @@ body {
     background-size: cover;
 }
 
+.logo1 {
+    max-height: 100%;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    background: url('../images/foot1-removebg-preview.png') no-repeat scroll center center transparent;
+    background-size: cover;
+    float: left;
+}
+
 .href1 {
     color: white;
 }
