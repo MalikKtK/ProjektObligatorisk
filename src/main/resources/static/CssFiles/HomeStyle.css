@@ -1,5 +1,13 @@
+body {
+    background-image: url('../images/mad.jpg');
+    margin: 0;
+}
+
+.href1 {
+    color: white;
+}
+
 .container {
-    position: relative;
     text-align: center;
     color: white;
 }
@@ -22,11 +30,10 @@
     right: 16px;
     color: blue;
 }
-
 .centered {
     position: absolute;
     text-align: center;
-    color: black;
+    color: white;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -34,7 +41,6 @@
     height: 281px;
 }
 
-body {margin: 0;}
 
 ul.topnav {
     z-index: 500;
@@ -63,4 +69,8 @@ ul.topnav li a.active {background-color: #04AA6D
 
 @media screen and (max-width: 600px) {
     ul.topnav li.right
+}
+
+.img1 {
+    background-image: none;
 }

@@ -3,7 +3,11 @@
     text-align: center;
     color: black;
 }
-body {margin: 0;}
+
+body {
+    background-image: url('../images/mad.jpg');
+    margin: 0;
+}
 
 ul.topnav {
     z-index: 500;
@@ -15,7 +19,9 @@ ul.topnav {
     background-color: black;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+    float: left;
+}
 
 ul.topnav li a {
     display: block;
@@ -25,21 +31,32 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
 
-ul.topnav li a.active {background-color: #04AA6D;}
+ul.topnav li a.active {
+    background-color: #04AA6D;
+}
 
 @media screen and (max-width: 600px) {
-    ul.topnav li {float: none;}
+    ul.topnav li {
+        float: none;
+    }
 }
 
 .centered {
     position: absolute;
     text-align: center;
-    color: black;
-    top: 25%;
+    color: white;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 63%;
     height: 45%;
+    margin-top: 50px;
+}
+
+.href2 {
+    color: white;
 }
