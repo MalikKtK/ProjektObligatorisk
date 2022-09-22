@@ -15,6 +15,59 @@ body {
     background: url('../images/foot1-removebg-preview.png') no-repeat scroll center center transparent;
     background-size: cover;
     float: left;
+    margin-top: 610px;
+    margin-left: 400px;
+    position: absolute;
+}
+
+.text1 {
+    margin-top: 135px;
+    color: red;
+    position: absolute;
+    width: 150px;
+    height: 40%;
+}
+
+.logo2 {
+    max-height: 100%;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    background: url('../images/foot2.png') no-repeat scroll center center transparent;
+    background-size: cover;
+    float: left;
+    margin-top: 610px;
+    margin-left: 885px;
+    position: absolute;
+}
+
+.text2 {
+    margin-top: 150px;
+    width: 150px;
+    height: 40%;
+    color: red;
+    position: absolute;
+}
+
+.logo3 {
+    max-height: 100%;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    background: url('../images/foot3.png') no-repeat scroll center center transparent;
+    background-size: cover;
+    float: left;
+    margin-top: 610px;
+    margin-left: 1400px;
+    position: absolute;
+}
+
+.text3 {
+    margin-top: 140px;
+    width: 150px;
+    height: 40%;
+    color: red;
+    position: absolute;
 }
 
 .href1 {
