@@ -37,9 +37,41 @@ ul.topnav li a.active {background-color: #04AA6D;}
     position: absolute;
     text-align: center;
     color: black;
-    top: 25%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 125%;
     height: 45%;
 }
+
+.search-button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: inherit;
+    line-height: 1;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.search-bar:hover {
+    background: #ccc;
+}
+
