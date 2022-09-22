@@ -1,22 +1,3 @@
-.container {
-    position: relative;
-    text-align: center;
-    color: black;
-}
-
-h1 {
-    color: black;
-}
-
-body {
-    background-image: url('../images/mad.jpg');
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 ul.topnav {
     z-index: 500;
     list-style-type: none;
@@ -53,18 +34,44 @@ ul.topnav li a.active {
     }
 }
 
-.centered {
-    position: absolute;
+.container {
+    position: relative;
     text-align: center;
-    color: white;
-    top: 200%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
+    color: black;
 }
 
-.href2 {
-    color: white;
+
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/mad.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("../images/white.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url("../images/foot4.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
