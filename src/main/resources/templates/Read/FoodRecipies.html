@@ -17,6 +17,10 @@
         </ul>
 <img src="../Images/foodwaste.jpg" alt="Madspild" style="width:111%;">
 <div class="centered">
+    <tr th:each="recipe: ${recipe}">
+        <td th:text="${recipe.getFoodType()}"/>
+        <td th:text="${recipe.getTextBody()}"/>
+    </tr>
     <div class="search-container">
         <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search">
