@@ -6,7 +6,11 @@
 
 body {
     background-image: url('../images/mad.jpg');
-    margin: 0;;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul.topnav {
