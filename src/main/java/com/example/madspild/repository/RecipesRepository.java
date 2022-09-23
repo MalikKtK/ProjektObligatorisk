@@ -19,7 +19,7 @@ public class RecipesRepository {
     public void generateRecipes() {
         // add recipe obj from csv
         try {
-            Scanner input = new Scanner(new File("D:\\Personal\\OneDrive\\KEA\\IdeaProjects\\ProjektObligatorisk\\src\\main\\resources\\templates\\recipe.csv"));
+            Scanner input = new Scanner(new File("src/main/resources/templates/recipe.csv"));
             input.useDelimiter(":");
 
             // skip header

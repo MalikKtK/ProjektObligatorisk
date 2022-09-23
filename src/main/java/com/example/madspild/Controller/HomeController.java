@@ -34,10 +34,9 @@ public class HomeController {
 
     @GetMapping("/read/foodrecipes")
     public String FoodRecipes(Model model) {
-        Recipe recipes = recipeService.getRecipeByFoodName("chicken");
-        List<Recipe> recipes1 = recipeService.getRecipesByFoodName("chicken");
+        List<Recipe> recipes = recipeService.getRecipesByFoodName("chicken");
 
-        model.addAttribute("recipes", recipes1);
+        model.addAttribute("recipes", recipes);
         return "Read/FoodRecipes";
     }
 
