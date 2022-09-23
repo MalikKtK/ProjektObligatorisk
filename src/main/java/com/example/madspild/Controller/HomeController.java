@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -24,22 +23,17 @@ public class HomeController {
     }
 
     @GetMapping("/about")
-    public String About() {
+    public String about() {
         return "home/about";
     }
 
     @GetMapping("/read/foodwaste")
-    public String FoodWaste() {
+    public String foodWaste() {
         return "read/foodwaste";
     }
 
-    @GetMapping("/game/foodwastegame")
-    public String FoodWasteGame() {
-        return "game/foodwastegame";
-    }
-
     @GetMapping("/read/foodrecipes")
-    public String FoodRecipes(Model model, @RequestParam String foodType) {
+    public String foodRecipes(Model model, @RequestParam String foodType) {
         List<Recipe> recipes = recipeService.getRecipesByFoodName(foodType);
 
         if (!foodType.equals(""))
