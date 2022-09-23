@@ -5,6 +5,7 @@ import com.example.madspild.service.RecipeService;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +34,8 @@ public class HomeController {
     }
 
     @GetMapping("/read/foodrecipes")
-    public String FoodRecipes(Model model) {
-        List<Recipe> recipes = recipeService.getRecipesByFoodName("chicken");
+    public String FoodRecipes(Model model, @RequestParam String foodType) {
+        List<Recipe> recipes = recipeService.getRecipesByFoodName(foodType);
 
         model.addAttribute("recipes", recipes);
         return "Read/FoodRecipes";
