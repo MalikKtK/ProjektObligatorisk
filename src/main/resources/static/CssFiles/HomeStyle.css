@@ -35,10 +35,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
-
-
 
 .logo1 {
     width: 150px;
@@ -53,10 +50,12 @@ body {
 
 .text1 {
     margin-top: 135px;
-    color: red;
+    color: black;
     position: absolute;
     width: 150px;
     height: 40%;
+    border: solid 2px white;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .logo2 {
@@ -74,10 +73,12 @@ body {
 
 .text2 {
     margin-top: 150px;
-    width: 150px;
-    height: 40%;
-    color: red;
+    color: black;
     position: absolute;
+    width: 150px;
+    height: 53%;
+    border: solid 2px white;
+    background: rgba(255, 260, 255, 0.5);
 }
 
 .logo3 {
@@ -97,8 +98,10 @@ body {
     margin-top: 140px;
     width: 150px;
     height: 40%;
-    color: red;
+    color: black;
     position: absolute;
+    border: solid 2px white;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .href1 {
@@ -114,10 +117,12 @@ body {
 .centered {
     position: absolute;
     text-align: center;
-    color: white;
+    color: black;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 281px;
+    border: solid 2px white;
+    background: rgba(255, 255, 255, 0.5);
 }

@@ -84,6 +84,7 @@ body {
     line-height: 1;
     font-family: FontAwesome;
     font-size: inherit;
+    font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
