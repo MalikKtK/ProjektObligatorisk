@@ -2,12 +2,8 @@ package com.example.madspild.model;
 
 public class Recipe {
     String foodType;
-    String textBody;
-
-    public Recipe(String foodType, String textBody) {
-        this.foodType = foodType;
-        this.textBody = textBody;
-    }
+    String title;
+    String body;
 
     public String getFoodType() {
         return foodType;
@@ -17,11 +13,26 @@ public class Recipe {
         this.foodType = foodType;
     }
 
-    public String getTextBody() {
-        return textBody;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTextBody(String textBody) {
-        this.textBody = textBody;
+    public void setTitle(String title) {
+        this.title = title;
     }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public Recipe(String foodType, String title, String body) {
+        this.foodType = foodType;
+        this.title = title;
+        this.body = body;
+    }
+
 }

@@ -14,9 +14,7 @@ public class RecipeService {
     }
 
     public List<Recipe> getRecipesByFoodName(String foodName) {
-        ArrayList<Recipe> recipes = new ArrayList<>();
-
-        return recipes;
+        return recipesRepository.getRecipes(foodName);
     }
 
     public Recipe getRecipeByFoodName(String foodName) {

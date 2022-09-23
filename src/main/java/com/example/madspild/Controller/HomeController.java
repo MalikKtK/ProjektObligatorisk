@@ -6,6 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 public class HomeController {
     private RecipeService recipeService;
@@ -31,10 +34,12 @@ public class HomeController {
 
     @GetMapping("/read/foodrecipes")
     public String FoodRecipes(Model model) {
-        Recipe recipe = recipeService.getRecipeByFoodName("chicken");
-        int recipe2 = recipeService.getSize();
+        Recipe recipes = recipeService.getRecipeByFoodName("chicken");
+        List<Recipe> recipes1 = recipeService.getRecipesByFoodName("chicken");
+//        recipes.add(recipeService.getRecipeByFoodName("chicken"));
+//        int recipe2 = recipeService.getSize();
 
-        model.addAttribute("recipe", recipe2);
+        model.addAttribute("recipes", recipes1);
         return "Read/FoodRecipies";
     }
 

@@ -12,27 +12,32 @@ public class RecipesRepository {
 
     private List<Recipe> recipes = new ArrayList<Recipe>();
 
-    public void generateMoviesList() {
+    public RecipesRepository() {
+        generateRecipes();
+    }
+
+    public void generateRecipes() {
         // add recipe obj from csv
         try {
-            Scanner input = new Scanner(new File("C:\\Users\\danie\\OneDrive\\KEA\\IdeaProjects\\ProjektObligatorisk\\src\\main\\resources\\templates\\recipe.csv"));
-            input.useDelimiter(";");
+            Scanner input = new Scanner(new File("D:\\Personal\\OneDrive\\KEA\\IdeaProjects\\ProjektObligatorisk\\src\\main\\resources\\templates\\recipe.csv"));
+            input.useDelimiter(":");
 
             // skip header
             input.nextLine();
 
             while (input.hasNextLine()) {
                 String line = input.nextLine();
-                Scanner token = new Scanner(line).useDelimiter(";").useLocale(Locale.ENGLISH);
+                Scanner token = new Scanner(line).useDelimiter(":").useLocale(Locale.ENGLISH);
 
                 //  Year;Length;Title;Subject;Popularity;Awards
                 while (token.hasNext()) {
                     // get attributes
                     String foodType = token.next();
-                    String textBody = token.next();
+                    String title = token.next();
+                    String body = token.next();
 
                     // add attributes
-                    recipes.add(new Recipe(foodType, textBody));
+                    recipes.add(new Recipe(foodType, title, body));
                 }
             }
 
@@ -46,13 +51,26 @@ public class RecipesRepository {
 
         // find recipe with food
         for (Recipe recipe : recipes) {
-            if (foodType.equals(recipe.getTextBody())) {
+            if (foodType.equals(recipe.getFoodType())) {
                 returnRecipe = recipe;
                 break;
             }
         }
 
         return returnRecipe;
+    }
+
+    public List<Recipe> getRecipes(String foodType) {
+        List<Recipe> returnRecipes = new ArrayList<>();
+
+        // find all recipes with food
+        for (Recipe recipe : recipes) {
+            if (foodType.equals(recipe.getFoodType())) {
+                returnRecipes.add(recipe);
+            }
+        }
+
+        return returnRecipes;
     }
 
     public int getSize() {

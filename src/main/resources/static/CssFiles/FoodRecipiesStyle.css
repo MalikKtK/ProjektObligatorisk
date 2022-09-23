@@ -91,3 +91,7 @@ ul.topnav li a.active {
     background: #ccc;
 }
 
+#recipes_list {
+    border: solid 2px white;
+}
+

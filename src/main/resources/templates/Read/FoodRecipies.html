@@ -16,16 +16,20 @@
         <li><a href="../game/foodwastegame">Food Waste Game</a></li>
     </ul>
     <div class="centered">
-        <tr th:each="recipe: ${recipe}">
-            <td th:text="${recipe.getFoodType()}"/>
-            <td th:text="${recipe.getTextBody()}"/>
-        </tr>
+
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="search-button"></i></button>
             </form>
         </div>
+
+        <ul th:each="recipe : ${recipes}" id="recipes_list">
+            <h3 th:text="${recipe.getFoodType()}"></h3>
+            <h3 th:text="${recipe.getTitle()}"></h3>
+            <li style="white-space: pre;" th:utext="${recipe.getBody()}"></li>
+            <p style="white-space: pre;" th:utext="${recipe.getBody()}"></p>
+        </ul>
     </div>
     <div style="padding-left:100px">
         <h2>Responsive Search Bar</h2>

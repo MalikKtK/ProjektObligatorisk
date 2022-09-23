@@ -1,2 +1,11 @@
-chicken; This is some tasty chicken
-olive; This damn good olive
+foodType:title:textBody
+chicken:chicken soup 1: This is some &#13; tasty chicken 1
+chicken:chicken soup 2: This is some tasty chicken 2
+chicken:chicken soup 3:LINE HAS <br/>A BREAK chicken 3
+chicken:chicken soup 4: This is some \n tasty chicken 4
+chicken:chicken soup 5: This is some /n tasty chicken 5
+chicken:chicken soup 6: This is some tasty chicken 6
+olive:olive soup 1: This damn good olive 1
+olive:olive soup 2: This damn good olive 2
+olive:olive soup 3: This damn good olive 3
+olive:olive soup 4: This damn good olive 4
