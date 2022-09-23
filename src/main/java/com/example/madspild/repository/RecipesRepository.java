@@ -51,7 +51,7 @@ public class RecipesRepository {
 
         // find recipe with food
         for (Recipe recipe : recipes) {
-            if (foodType.equals(recipe.getFoodType())) {
+            if (foodType.equalsIgnoreCase(recipe.getFoodType())) {
                 returnRecipe = recipe;
                 break;
             }
@@ -65,7 +65,7 @@ public class RecipesRepository {
 
         // find all recipes with food
         for (Recipe recipe : recipes) {
-            if (foodType.equals(recipe.getFoodType())) {
+            if (foodType.equalsIgnoreCase(recipe.getFoodType())) {
                 returnRecipes.add(recipe);
             }
         }
