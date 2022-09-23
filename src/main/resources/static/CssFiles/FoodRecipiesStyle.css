@@ -30,7 +30,21 @@ ul.topnav li a.active {
 }
 
 @media screen and (max-width: 600px) {
-    ul.topnav li {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
         float: none;
     }
 }
@@ -63,31 +77,12 @@ body {
 }
 
 .search-button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    font: normal normal normal 14px/1 FontAwesome;
-    display: inline-block;
-    font-style: normal;
-    font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-size: inherit;
-    line-height: 1;
-    font-family: FontAwesome;
-    font-size: inherit;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: FontAwesome, serif;
+
+}
+.search-bar {
+    margin-top: 13px;
+    margin-left: 500px;
 }
 
 .search-bar:hover {
