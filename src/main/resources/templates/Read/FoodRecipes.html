@@ -21,12 +21,10 @@
         </li>
     </ul>
     <div class="centered">
-
+        <p class="p1">Hej med dig</p>
         <!--/*@thymesVar id="recipes" type=""*/-->
         <ul th:each="recipe : ${recipes}" id="recipes_list">
-            <h3 th:text="${recipe.getFoodType()}"></h3>
             <h3 th:text="${recipe.getTitle()}"></h3>
-            <li style="white-space: pre;" th:utext="${recipe.getBody()}"></li>
             <p style="white-space: pre;" th:utext="${recipe.getBody()}"></p>
         </ul>
     </div>

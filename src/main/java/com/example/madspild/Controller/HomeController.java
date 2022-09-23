@@ -42,6 +42,11 @@ public class HomeController {
     public String FoodRecipes(Model model, @RequestParam String foodType) {
         List<Recipe> recipes = recipeService.getRecipesByFoodName(foodType);
 
+        if (!foodType.equals(""))
+            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste", String.format("'%s' WAS NOT FOUND", foodType)));
+        else if (recipes.size() == 0)
+            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste", "examples: chicken, onion, my name jeff"));
+
         model.addAttribute("recipes", recipes);
         return "Read/FoodRecipes";
     }
