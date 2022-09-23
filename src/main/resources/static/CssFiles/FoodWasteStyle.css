@@ -44,6 +44,7 @@ ul.topnav li a.active {
 
 body, html {
     height: 100%;
+    margin: 0;
 }
 
 .parallax {

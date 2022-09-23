@@ -1,23 +1,54 @@
+ul.topnav {
+    z-index: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right
+}
+
+
 body {
     background-image: url('../images/mad.jpg');
     margin: 0;
     height: 100%;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
+
+
 .logo1 {
-    max-height: 100%;
-    max-width: 100%;
     width: 150px;
     height: 150px;
-    background: url('../images/foot1-removebg-preview.png') no-repeat scroll center center transparent;
+    background: url('../images/foot1-removebg-preview.png');
     background-size: cover;
     float: left;
-    margin-top: 610px;
-    margin-left: 400px;
     position: absolute;
+    top: 55%;
+    left: 20%;
 }
 
 .text1 {
@@ -36,9 +67,9 @@ body {
     background: url('../images/foot2.png') no-repeat scroll center center transparent;
     background-size: cover;
     float: left;
-    margin-top: 610px;
-    margin-left: 885px;
     position: absolute;
+    top: 54%;
+    left: 46%;
 }
 
 .text2 {
@@ -57,9 +88,9 @@ body {
     background: url('../images/foot3.png') no-repeat scroll center center transparent;
     background-size: cover;
     float: left;
-    margin-top: 610px;
-    margin-left: 1400px;
     position: absolute;
+    top: 55%;
+    left: 75%;
 }
 
 .text3 {
@@ -89,34 +120,4 @@ body {
     transform: translate(-50%, -50%);
     width: 500px;
     height: 281px;
-}
-
-
-ul.topnav {
-    z-index: 500;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    background-color: black;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #04AA6D
-}
-
-@media screen and (max-width: 600px) {
-    ul.topnav li.right
 }
