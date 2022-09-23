@@ -23,6 +23,11 @@ public class HomeController {
         return "home/index";
     }
 
+    @GetMapping("/about")
+    public String About() {
+        return "home/about";
+    }
+
     @GetMapping("/read/foodwaste")
     public String FoodWaste() {
         return "read/foodwaste";
