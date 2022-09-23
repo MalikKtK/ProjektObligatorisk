@@ -82,7 +82,7 @@ body {
 }
 .search-bar {
     margin-top: 13px;
-    margin-left: 500px;
+    margin-left: auto;
 }
 
 .search-bar:hover {
