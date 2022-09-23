@@ -93,5 +93,6 @@ ul.topnav li a.active {
 
 #recipes_list {
     border: solid 2px white;
+    background: rgba(255, 255, 255, 0.5);
 }
 

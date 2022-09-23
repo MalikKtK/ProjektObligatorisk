@@ -36,11 +36,9 @@ public class HomeController {
     public String FoodRecipes(Model model) {
         Recipe recipes = recipeService.getRecipeByFoodName("chicken");
         List<Recipe> recipes1 = recipeService.getRecipesByFoodName("chicken");
-//        recipes.add(recipeService.getRecipeByFoodName("chicken"));
-//        int recipe2 = recipeService.getSize();
 
         model.addAttribute("recipes", recipes1);
-        return "Read/FoodRecipies";
+        return "Read/FoodRecipes";
     }
 
 }
