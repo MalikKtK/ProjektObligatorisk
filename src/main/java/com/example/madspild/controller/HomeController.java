@@ -1,4 +1,4 @@
-package com.example.madspild.Controller;
+package com.example.madspild.controller;
 
 import com.example.madspild.model.Recipe;
 import com.example.madspild.service.RecipeService;

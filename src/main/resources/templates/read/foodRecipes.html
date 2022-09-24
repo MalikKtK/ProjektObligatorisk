@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipies</title>
+    <link rel="stylesheet" href="../CssFiles/FoodRecipiesStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <ul class="topnav">
+        <li><a href="../">Home</a></li>
+        <li><a href="../read/foodwaste">Food Waste</a></li>
+        <li><a class="active" href="../read/foodrecipes?foodType=">Food Recipies</a></li>
+        <li><a href="../about">About</a></li>
+        <li>
+            <form action="/read/foodrecipes"><input type="text" placeholder="Search.." name="foodType" class="search-bar">
+                <button type="submit"><i class="search-button">Submit</i></button>
+            </form>
+        </li>
+    </ul>
+    <div class="centered">
+        <p class="p1">Hej med dig</p>
+        <!--/*@thymesVar id="recipes" type=""*/-->
+        <ul th:each="recipe : ${recipes}" id="recipes_list">
+            <h3 th:text="${recipe.getTitle()}"></h3>
+            <p style="white-space: pre;" th:utext="${recipe.getBody()}"></p>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
