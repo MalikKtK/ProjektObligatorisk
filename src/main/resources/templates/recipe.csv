@@ -1,11 +1,20 @@
-foodType:title:textBody
-chicken:chicken soup 1: This is some &#13; tasty chicken 1
-chicken:chicken soup 2: This is some tasty chicken 2
-chicken:chicken soup 3:LINE HAS <br/>A BREAK chicken 3
-chicken:chicken soup 4: This is some \n tasty chicken 4
-chicken:chicken soup 5: This is some /n tasty chicken 5
-chicken:chicken soup 6: This is some tasty chicken 6
-olive:olive soup 1: This damn good olive 1
-olive:olive soup 2: This damn good olive 2
-olive:olive soup 3: This damn good olive 3
-olive:olive soup 4: This damn good olive 4
+foodType;title;textBody
+chicken;chicken soup; - 1 (3 pound) whole chicken, - 4 carrots, halved<br/><br/> 4 stalks celery, halved, -large onion, halved<br/><br/> water to cover, - salt and pepper to taste<br/><br/> Sauté greens separately. Cook chicken in skillet with some oil.<br/> Afterwards combine all ingredients in a pot and wait for it to get real poggers
+chicken;chicken recipe 2; Tasty chicken and some ingredients<br/><br/>recipe for making it
+chicken;chicken recipe 3; Tasty chicken and some ingredients<br/><br/>recipe for making it
+chicken;chicken recipe 4; Tasty chicken and some ingredients<br/><br/>recipe for making it
+chicken;chicken recipe 5; Tasty chicken and some ingredients<br/><br/>recipe for making it
+chicken;chicken recipe 6; Tasty chicken and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 1; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 2; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 3; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 4; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 5; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 6; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 7; Tasty onion and some ingredients<br/><br/>recipe for making it
+onion;onion recipe 8; Tasty onion and some ingredients<br/><br/>recipe for making it
+cabbage;sauerkraut; cabbage and 2% salt by weight<br/><br/>thinly slice cabbage and massage the cabbage with your hands for 5 minutes.<br/> add salt and place in  airtight container for 2 weeks (should be able to release gas)
+cabbage;cabbage recipe 2; Tasty cabbage and some ingredients<br/><br/>recipe for making it
+cabbage;cabbage recipe 3; Tasty cabbage and some ingredients<br/><br/>recipe for making it
+my name is jeff;his name is jeff; https://www.youtube.com/watch?v=AfIOBLr1NDU
+

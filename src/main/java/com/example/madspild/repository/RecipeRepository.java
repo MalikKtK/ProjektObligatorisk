@@ -20,14 +20,14 @@ public class RecipeRepository {
         // add recipe obj from csv
         try {
             Scanner input = new Scanner(new File("src/main/resources/templates/recipe.csv"));
-            input.useDelimiter(":");
+            input.useDelimiter(";");
 
             // skip header
             input.nextLine();
 
             while (input.hasNextLine()) {
                 String line = input.nextLine();
-                Scanner token = new Scanner(line).useDelimiter(":").useLocale(Locale.ENGLISH);
+                Scanner token = new Scanner(line).useDelimiter(";").useLocale(Locale.ENGLISH);
 
                 //  Year;Length;Title;Subject;Popularity;Awards
                 while (token.hasNext()) {

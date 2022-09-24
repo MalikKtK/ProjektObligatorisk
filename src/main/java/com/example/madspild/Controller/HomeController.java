@@ -37,7 +37,7 @@ public class HomeController {
         List<Recipe> recipes = recipeService.getRecipesByFoodName(foodType);
 
         if (foodType.isBlank())
-            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste 2", "examples: chicken, onion, my name jeff"));
+            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste 2", "examples: chicken, cabbage, onion, my name is jeff"));
         else if (recipes.size() == 0)
             recipes.add(new Recipe("", "Look for recipes of food you don't want to waste 1", String.format("'%s' WAS NOT FOUND", foodType)));
 
