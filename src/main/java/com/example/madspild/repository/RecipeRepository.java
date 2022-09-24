@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class RecipesRepository {
+public class RecipeRepository {
 
     private List<Recipe> recipes = new ArrayList<Recipe>();
 
-    public RecipesRepository() {
+    public RecipeRepository() {
         generateRecipes();
     }
 

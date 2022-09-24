@@ -1,28 +1,27 @@
 package com.example.madspild.service;
 
 import com.example.madspild.model.Recipe;
-import com.example.madspild.repository.RecipesRepository;
+import com.example.madspild.repository.RecipeRepository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RecipeService {
-    RecipesRepository recipesRepository;
+    RecipeRepository recipeRepository;
 
     public RecipeService() {
-        this.recipesRepository = new RecipesRepository();
+        this.recipeRepository = new RecipeRepository();
     }
 
     public List<Recipe> getRecipesByFoodName(String foodName) {
-        return recipesRepository.getRecipes(foodName);
+        return recipeRepository.getRecipes(foodName);
     }
 
     public Recipe getRecipeByFoodName(String foodName) {
-        return recipesRepository.getRecipe("chicken");
+        return recipeRepository.getRecipe("chicken");
     }
 
     public int getSize() {
-        return recipesRepository.getSize();
+        return recipeRepository.getSize();
     }
 
 
