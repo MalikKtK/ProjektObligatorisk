@@ -36,10 +36,10 @@ public class HomeController {
     public String foodRecipes(Model model, @RequestParam String foodType) {
         List<Recipe> recipes = recipeService.getRecipesByFoodName(foodType);
 
-        if (!foodType.equals(""))
-            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste", String.format("'%s' WAS NOT FOUND", foodType)));
+        if (foodType.isBlank())
+            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste 2", "examples: chicken, onion, my name jeff"));
         else if (recipes.size() == 0)
-            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste", "examples: chicken, onion, my name jeff"));
+            recipes.add(new Recipe("", "Look for recipes of food you don't want to waste 1", String.format("'%s' WAS NOT FOUND", foodType)));
 
         model.addAttribute("recipes", recipes);
         return "Read/FoodRecipes";
